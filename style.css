@@ -1,0 +1,55 @@
+/* CSS Document */
+
+
+/*画像の左上に文字を重ねる*/
+/******************************************/
+.example{
+    position:relative;    /*親要素*/
+}
+.example p{
+    /*絶対配置*/
+    /*親要素内での位置を指定*/
+    position:absolute;
+    top:0;      /*上から０px*/
+    left:0;     /*左から0px*/
+    
+    /*文字装飾*/
+    color:white;
+}
+.example img{
+    width:100%;
+}
+/******************************************/
+
+
+/*画像の中央に文字を重ねる*/
+/******************************************/
+.example-center{
+    position:relative;    /*親要素*/
+}
+.example-center p{
+    /*絶対配置*/
+    position: absolute;
+    /*中央に配置*/
+    top: 50%;
+    left: 50%;
+    
+    /*文字サイズの半分だけ戻す*/
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    /*念の為余白を0にする*/
+    margin:0;
+    padding:0;
+    
+    /*文字装飾*/
+    color:white;
+}
+.example-center img{
+    width:100%;
+}
+/******************************************/
+
+
+
